@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>temp_app</title>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+<div class="w3-container w3-display-middle">
+    <div class="w3-panel w3-card" style="height: 400px;">
+        <h1>Amazon Reviews Scraper</h1><br><br>
+        <form id="input-form" method="post" action="/">
+            <label>
+                <input type="text" name="url" style="width: 300px;" required pattern="https://www.amazon.in/(.*)"
+                       placeholder="Amazon Product URL"
+                       value="https://www.amazon.in/SanDisk-Cruzer-Blade-Flash-Drive/dp/B005FYNT3G?pf_rd_r=1W70BFZPN5EG28PWZE5R&pf_rd_p=406d1302-20ad-5b8d-a279-43ce0bfbba6f&pd_rd_r=c64162e5-4da0-4b63-acd2-83963ed57401&pd_rd_w=z1E5E&pd_rd_wg=HvMvr&ref_=pd_gw_ri"/>
+            </label><br><br>
+            <input id="submitbutton" type="submit" name="submitbutton" value="Analyze Reviews"/>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
